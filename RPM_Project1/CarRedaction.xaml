@@ -1,0 +1,40 @@
+﻿<Window x:Class="RPM_Project1.CarRedaction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Loaded="Window_Loaded"
+        mc:Ignorable="d"
+       Title="CarRedaction" Height="600" Width="800" MinWidth="800" MinHeight="600">
+    <Grid>
+        <Canvas>
+            <Image x:Name="Image" Width="450" Height="200" Canvas.Top="50" Canvas.Left="50"></Image>
+
+            <Button Click="Button_Click_1"  Width="180" Height="35" Background="#42AEBC" FontSize="20" Canvas.Top="70" Canvas.Right="70" >
+                Удалить
+            </Button>
+            <Button Click="Button_Click_2"  Width="180" Height="35" Background="#42AEBC" FontSize="20" Canvas.Top="130" Canvas.Right="70" >
+                Редактировать
+            </Button>
+            <Button Click="Button_Click"  Width="180" Height="35" Background="#BC4242" FontSize="20" Canvas.Top="190" Canvas.Right="70" >
+                 Вернуться назад
+            </Button>
+
+            <TextBlock  Canvas.Top="300" Foreground="White" Canvas.Left="25" Width="300" FontSize="20"> Модель:</TextBlock>
+            <TextBlock  Canvas.Top="350" Foreground="White" Canvas.Left="25" Width="300" FontSize="20"> Цена (руб):</TextBlock>
+            <TextBlock  Canvas.Top="400" Foreground="White" Canvas.Left="25" Width="300" FontSize="20"> Описание: </TextBlock>
+            <TextBlock  Canvas.Top="450" Foreground="White" Canvas.Left="25" Width="300" FontSize="20"> Год выпуска: </TextBlock>
+            <TextBlock  Canvas.Top="500" Foreground="White" Canvas.Left="25" Width="300" FontSize="20"> Характеристики: </TextBlock>
+            
+            <TextBlock Foreground="White" x:Name="Model" Canvas.Top="300" Canvas.Left="200" FontSize="25">Модель</TextBlock>
+            <TextBlock  Foreground="White" x:Name="Cost" Canvas.Top="350" Canvas.Left="200" FontSize="25">Цена</TextBlock>
+            <TextBlock Foreground="White" x:Name="Desc" Canvas.Top="400" Canvas.Left="200" FontSize="25">Описание</TextBlock>
+            <TextBlock Foreground="White" x:Name="Year" Canvas.Top="450" Canvas.Left="200" FontSize="25">Год выпуска</TextBlock>
+            <TextBlock Foreground="White" x:Name="Char" Canvas.Top="500" Canvas.Left="200" FontSize="25">Характеристики</TextBlock>
+
+
+
+
+        </Canvas>
+    </Grid>
+</Window>
